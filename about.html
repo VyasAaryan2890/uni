@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univercity Website - By Vyas Aaryan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+            <div class="nav-links" id="navlinks">
+                <iconify-icon icon="material-symbols:close" class="close" onclick="hidemenu()"></iconify-icon>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <iconify-icon icon="material-symbols:menu" class="menu" onclick="showmenu()"></iconify-icon>
+        </nav>
+
+        <h1>About Us</h1>
+    </section>
+
+
+    <!--------------About us content--------------------------------->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>we Are the world largest Univercity</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque fuga ad nulla rerum eligendi labore,
+                    veritatis quia autem modi ipsa culpa earum reprehenderit praesentium omnis quos ea ipsum est
+                    expedita!
+                </p>
+                <a href="" class="btn red">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!---------------footer------------------>
+
+    <section class="footer">
+        <h4>About us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Porro nisi, molestiae optio odio commodi temporibus</p>
+        <div class="icon">
+            <iconify-icon icon="logos:facebook" class="f"></iconify-icon>
+            <iconify-icon icon="logos:twitter" class="f"></iconify-icon>
+            <iconify-icon icon="skill-icons:instagram" class="f"></iconify-icon>
+            <iconify-icon icon="devicon:linkedin" class="f"></iconify-icon>
+        </div>
+    </section>
+
+    <!--------------------javascript for sidebar------------>
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+
+        function showmenu() {
+            navlinks.style.right = "0px";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-250px";
+        }
+    </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
+</html>
